@@ -1,0 +1,32 @@
+import java.util.*;
+class Main
+{
+    public static void main(String[] args)
+    {
+        int n;
+        int evensum=0;
+        int oddsum=0;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        int[] array=new int[10];
+        for(int i=0;i<n;i++)
+        {
+            array[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(array[i]%2==0)
+          {
+               evensum+=array[i];
+            }
+            else 
+            {
+                oddsum+=array[i];
+            }
+       
+           
+        }
+        int difference=evensum-oddsum;
+        System.out.println(difference);
+    }
+}
